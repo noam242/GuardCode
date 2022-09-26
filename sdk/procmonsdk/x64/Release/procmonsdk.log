@@ -1,0 +1,28 @@
+﻿  buffer.cxx
+  drvload.cxx
+  eventfactory.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  fileopt.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  logger.cxx
+  module.cxx
+  monctl.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  event.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  eventmgr.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\eventmgr.cxx(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  eventview.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  pch.cxx
+  process.cxx
+  procmgr.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  procopt.cxx
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+  strmaps.cxx
+  thread.cxx
+  utils.cxx
+  viewer.cxx
+  procmonsdk.vcxproj -> C:\Users\Pooh\source\repos\GuardCode\x64\Release\procmonsdk.lib

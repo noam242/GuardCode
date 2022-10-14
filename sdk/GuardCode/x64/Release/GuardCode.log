@@ -1,0 +1,16 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (example.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  GuardCode.cpp
+C:\Users\Pooh\source\repos\GuardCode\sdk\procmonsdk\procmgr.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (1255). Save the file in Unicode format to prevent data loss
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(441,24): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 3 has type 'ATL::CString'
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(441,24): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 5 has type 'ATL::CString'
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(449,24): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 3 has type 'ATL::CString'
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(449,24): warning C4477: 'fwprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 4 has type 'ATL::CString'
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(532,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'ptrdiff_t'
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(532,10): message : consider using '%td' in the format string
+C:\Users\Pooh\source\repos\GuardCode\sdk\GuardCode\GuardCode.cpp(539,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  1 of 2118 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GuardCode.vcxproj -> C:\Users\Pooh\source\repos\GuardCode\x64\Release\GuardCode.exe

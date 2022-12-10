@@ -1,6 +1,12 @@
-# GuardCode
-GuardCode gives you the ability to monitor your application and catch rouge events.
-
+# <p align="center"> GuardCode </p>
+GuardCode gives you the ability to monitor your application and catch rogue events.
+# Table of Contents
+* [Usage](https://github.com/noam242/GuardCode/edit/main/README.md#Usage)
+* [Fast usage](https://github.com/noam242/GuardCode/edit/main/README.md#Fast-usage)
+* [UsageExamples](https://github.com/noam242/GuardCode/edit/main/README.md#Usage-Examples)
+* [Advanced usage](https://github.com/noam242/GuardCode/edit/main/README.md#Advanced-usage)
+* [Pointers of how to write rules](https://github.com/noam242/GuardCode/edit/main/README.md#Rules)
+* [RulesExamples](https://github.com/noam242/GuardCode/edit/main/README.md#Rules-Examples)
 ## Usage
 The usage of the tool is when you want to check a library\module does not have malicious intention.
 To use one of the releases you will need to do those steps:
@@ -31,7 +37,7 @@ This will stop your application if the events deviated from the rules.\
 example of running the application with microsoft's driver:
 ![example for running application with microsoft's driver](https://github.com/noam242/GuardCode/blob/main/GIFs/cmdadminandrun.gif)
 
-### Examples of usage:
+#### Usage Examples:
 If you want to only monitor your application:
 ```
 GuardCode.exe -e example.exe
@@ -62,34 +68,53 @@ download [GuardCodeFormat](https://github.com/noam242/GuardCode/blob/main/GuardC
     4. When imported successfully you should see it in one of the "User language:" tabs, Then restart the notepad++ application.
     5. When needed click on "Language" tab, then on GuardCodeFormat and you should see the colors.
 ![example for loading the format to notepad++](https://github.com/noam242/GuardCode/blob/main/GIFs/GuardCodeFormatNotepadLoading.gif)
-## Expert usage
-
-### Rules
+### Advanced usage
+For "advanced usage" you will need to understand of how the rules works.
+#### Rules
 Pointers of How to write the rules:
-* one
-* two
+* Rules can contain every event to a "file" or "registry key"(WIP) or socket\connections(WIP).
+    * [List of the events that can be](https://github.com/noam242/GuardCode/blob/main/AllEvents.txt)
+* Rules works like a firewall rules, that means that you can write rules to "drop" an event or to "accept" it and if a rule above accepts an event and below does not then the event will be accepted and vice versa. like in this example:
+    * if you have this in the rule file: 
+    * ``` [+]do process create ```
+    * ``` [-]do process create ```
+    * Then the event "process create" will be accepted even though you have a rule to not accept it.
+* Rules are written in a certain format like so:
+    * To accept an event :``` [+]do <event> for <path\registry key\socket\connections> ```
+    * To "drop" an event :``` [-]do <event> for <path\registry key\socket\connections> ```
+    * For event that a process related : ``` [-\+] <process-event> ```
+    * To write a comments to your rules (not in the same line) : ``` # <your comments> ```
+* Rules are written in regex format.
+    * If you do not know what is it you can got to here [Understanding Regex](https://www.thisdot.co/blog/understanding-regex).
+        * If you want a visible representation of you doing use [Regex101](https://regex101.com/).
+##### Rules examples
+If you want to allow every event for a path:
+  * ``` [+]do .* for c:\\windows\\system32\\.* ```
 
+If you want to allow a event for all path:
+  * ``` [+]do createfile for .* ```
 
+If you want to specify some events to a path:
+  * ``` [+]do (createfile|readfile) for c:\\test\.txt  ```
 
+If you want to allow a process related event:
+  * ``` [+]do thread exit ```
 
+If you want to disallow all events:
+  * ``` [-].* ```
 
+## TODO list
+- [ ] Get registry key events.
+- [ ] Get socket\connections events.
+- [ ] Make GuardCode much faster with checking if event is allowed or not.
+- [ ] GUI for writing the rules in GuardCode format.
+- [ ] Make GuardCode run in driver meaning that checking if event is allowed or not will be in the kernel level and much faster.
 
+#### Problems & Suggestions
+If you see any problems with the tool or you have any suggestions.
+You can open an issues in this [github repostoriy](https://github.com/noam242/GuardCode/issues) or you can write me an email to here GuardCodePS@gmail.com
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## inspirations
+## Inspirations
 The project that made me to start this project [hagana](https://github.com/yaakov123/hagana).\
-The project that made my life much easier [openprocmon](https://github.com/progmboy/openprocmon).
+The project that made my life much easier [openprocmon](https://github.com/progmboy/openprocmon).\
+Link to an article that i have written about open source and suppliy chain [DigitalWhisper]() (it is in hebrew sorry non speakers).

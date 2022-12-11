@@ -1,12 +1,12 @@
 # <p align="center"> GuardCode </p>
 GuardCode gives you the ability to monitor your application and catch rogue events.
 # Table of Contents
-* [Usage](https://github.com/noam242/GuardCode/edit/main/README.md#Usage)
-* [Fast usage](https://github.com/noam242/GuardCode/edit/main/README.md#Fast-usage)
-* [UsageExamples](https://github.com/noam242/GuardCode/edit/main/README.md#Usage-Examples)
-* [Advanced usage](https://github.com/noam242/GuardCode/edit/main/README.md#Advanced-usage)
-* [Pointers of how to write rules](https://github.com/noam242/GuardCode/edit/main/README.md#Rules)
-* [RulesExamples](https://github.com/noam242/GuardCode/edit/main/README.md#Rules-Examples)
+* [Usage](https://github.com/noam242/GuardCode#Usage)
+* [Fast usage](https://github.com/noam242/GuardCode#Fast-usage)
+* [UsageExamples](https://github.com/noam242/GuardCode#Usage-Examples)
+* [Advanced usage](https://github.com/noam242/GuardCode#Advanced-usage)
+* [Pointers of how to write rules](https://github.com/noam242/GuardCode#Rules)
+* [RulesExamples](https://github.com/noam242/GuardCode#Rules-Examples)
 ## Usage
 The usage of the tool is when you want to check a library\module does not have malicious intention.
 To use one of the releases you will need to do those steps:
